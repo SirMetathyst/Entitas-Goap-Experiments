@@ -1,0 +1,17 @@
+context AI(default);
+
+component ID {
+    value(entityIndex:single) as int;
+}
+
+component GoapAction as "System.Func<GoapActionStatus>";
+component GoapPlan as "System.Collections.Generic.IEnumerator<int>";
+component GoapPlanner as "IGoapPlanner<string, object>";
+component GoapEffect as "IGoapState<string, object>";
+component GoapCondition as "IGoapState<string, object>";
+component GoapWorldState as "IGoapState<string, object>";
+component GoapGoalState as "IGoapState<string, object>";
+component GoapNodeChildren as "System.Collections.Generic.List<int>";
+component Cost as int;
+component GoapAgent;
+component GoapPlanRequest;
